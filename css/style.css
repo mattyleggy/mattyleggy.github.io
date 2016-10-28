@@ -78,22 +78,17 @@ header {
 nav {
 	display: inline-block;
 	padding: 0px 20px;
-	box-shadow: 0px 0px 5px #aaa;
+	box-shadow: 0px 0px 3px #777;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
-	background: #fff;	
+	background: #00c284;	
 	text-align: center;
 	vertical-align: center;
 	line-height: 1;
-	/*
-	border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px;
-	*/
 	box-sizing: border-box;
 	position: fixed;
-	left: 50%;
-	margin-left: -600px;
-	width: 1200px;
+	width: 100%;
+	left: 0px;
 	z-index: 10;
 }
 
@@ -104,17 +99,20 @@ nav ul {
 }
 
 nav ul li {
-	display: inline-block;	
-	border-right: 1px solid #eee;
+	float: left;	
+	border-right: 1px solid #00aa74;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav ul li a:link, nav ul li a:visited {
-	color: #888;
+	color: #fff;
 	text-decoration: none;
 	font-size: 1.0em;
-	padding: 25px 20px;
+	padding: 20px 20px;
 	display: inline-block;
 	text-transform: uppercase;
+	box-sizing: border-box;
 }
 
 nav ul:first-child li:first-child a:link { 
@@ -122,7 +120,7 @@ nav ul:first-child li:first-child a:link {
 }
 
 nav ul li a:hover, nav ul li a:active {
-	color: #000;
+	text-decoration: underline;
 }
 
 .nav-icon { background-repeat: no-repeat; background-position: center left; background-size: 20px; text-indent: 20px; }
